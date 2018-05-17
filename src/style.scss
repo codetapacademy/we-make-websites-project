@@ -1,18 +1,3 @@
-$color-botticelli: #ced9e4;
-$color-san-juan: #2d4966;
-$color-black-squeeze: #e9f0f7;
-
-.announce__option {
-    display: inline-flex;
-    align-items: center;
-    text-transform: uppercase;
-}
-.announce__button {
-    border: 1px solid $color-san-juan;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-@import '_component/config/font'
+@import '_component/config/font';
+@import '_component/config/color';
+@import '_component/announce/announce';
