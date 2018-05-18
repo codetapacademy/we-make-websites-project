@@ -2,3 +2,15 @@
     .navbar__logo
     label.navbar__drawer
         span.wmw-ic_drawer
+    .navbar__action-list
+        -
+            const actionList = [
+                'search',
+                'profile',
+                'heart',
+                'bag'
+            ]
+        each action in actionList 
+            .navbar__action
+                span(class=`wmw-${action}`)
+        
