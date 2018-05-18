@@ -2,6 +2,18 @@
     .navbar__logo
     label.navbar__drawer
         span.wmw-ic_drawer
+    .navbar__menu-list
+        -
+            const menuList = [
+                'home',
+                'collections',
+                'logbook',
+                'about'
+            ]
+        each menu in menuList
+            .navbar__menu=menu
+
+
     .navbar__action-list
         -
             const actionList = [

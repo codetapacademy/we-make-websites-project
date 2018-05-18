@@ -7,4 +7,18 @@
             display: inherit;
         }
     }
+
+    .navbar__drawer {
+        display: none;
+    }
+
+    .navbar__menu-list {
+        position: static;
+        flex-direction: row;
+    }
+
+    .navbar__menu {
+        // display: flex;
+        padding: 20px 10px;
+    }
 }
