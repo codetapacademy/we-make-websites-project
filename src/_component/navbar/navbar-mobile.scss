@@ -12,6 +12,7 @@
 }
 
 .navbar__drawer {
+    cursor: pointer;
     order: -1;
     font-size: 1.6rem;
     padding: 20px;
@@ -35,6 +36,7 @@
     display: flex;
     top: 60px;
     flex-direction: column;
+    left: -100%;
 }
 
 .navbar__menu {
@@ -42,4 +44,13 @@
     text-transform: uppercase;
     color: $color-san-juan;
 
+}
+
+#anything-you-want:checked + .navbar__menu-list {
+    left: 0%;
+    transition: 0.3s;
+}
+
+#anything-you-want {
+    display: none;
 }

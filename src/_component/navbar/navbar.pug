@@ -1,7 +1,13 @@
 .navbar
     .navbar__logo
-    label.navbar__drawer
+    label.navbar__drawer(
+        for='anything-you-want'
+    )
         span.wmw-ic_drawer
+    input(
+        type='checkbox'
+        id='anything-you-want'
+    )
     .navbar__menu-list
         -
             const menuList = [
@@ -12,8 +18,6 @@
             ]
         each menu in menuList
             .navbar__menu=menu
-
-
     .navbar__action-list
         -
             const actionList = [
