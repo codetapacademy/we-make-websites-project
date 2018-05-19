@@ -1,0 +1,20 @@
+.image-slider
+    .image-slider__dot-list
+        -
+            const dotList=[
+                'big-dot',
+                'small-dot',
+                'c-dot'
+            ]
+        each dot, key in dotList
+            input(
+                type='radio'
+                class='image-slider__dot-selector'
+                name='asdfrty'
+                id=`qwet-${key}`
+            )
+        each dot, key in dotList
+            label.image-slider__dot(for=`qwet-${key}`)
+        .image-slider__content-wrapper
+            each dot, key in dotList
+                .image-slider__content=key
