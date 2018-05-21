@@ -18,7 +18,10 @@
     }
 
     .navbar__menu {
-        // display: flex;
         padding: 20px 10px;
+
+        &:hover .box {
+            display: inherit;
+        }
     }
 }
