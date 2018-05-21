@@ -11,10 +11,12 @@
                 type='radio'
                 class='image-slider__dot-selector'
                 name='asdfrty'
+                checked=key === 0
                 id=`qwet-${key}`
             )
         each dot, key in dotList
             label.image-slider__dot(for=`qwet-${key}`)
-        .image-slider__content-wrapper
-            each dot, key in dotList
-                .image-slider__content=key
+        .image-slider__content-wrapper-list
+            .image-slider__content-wrapper
+                each dot, key in dotList
+                    .image-slider__content=key
