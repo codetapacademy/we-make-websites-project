@@ -4,8 +4,11 @@
     position: absolute;
     z-index: 1;
     background-color: white;
-    left: -33vw;
+    left: -210%;
     display: none;
+}
+.navbar__menu:nth-child(3) .box {
+   left: -320%;
 }
 
 .box__content {
